@@ -27,9 +27,9 @@ onMounted(() => {
       <Slider />
     </section>
     <section>
-      <div class="flex justify-between mt-5">
+      <div class="flex justify-between flex-wrap">
         <div
-          class="relative rounded-md px-6 py-4 pr-44 bg-pink-50/20 flex-1 mr-4 last:mr-0 shadow-md hover:shadow-xl hover:shadow-black/10 transition-all duration-700"
+          class="relative mt-5 rounded-md px-6 py-4 pr-44 bg-pink-50/20 flex-1 mr-4 md:last:mr-0 shadow-md hover:shadow-xl hover:shadow-black/10 transition-all duration-700"
           v-for="({ title, slogan, bg }, i) of slogans"
         >
           <h1 class="text-2xl font-medium">{{ title }}</h1>
