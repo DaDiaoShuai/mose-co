@@ -11,7 +11,7 @@ const toggleMode = (mode) => {
 
 <template>
   <nav
-    class="sticky top-0 w-full flex items-center h-16 dark:bg-stone-600 dark:text-font-light text-font transition-all duration-1000 shadow border-y-0 bg-white/20 bg-gradient-to-l from-[#6d6027]/20 to-[#d3cbb8]/20 z-[100]"
+    class="fixed top-0 w-full flex items-center h-16 dark:bg-stone-600 dark:text-font-light text-font transition-all duration-1000 shadow border-y-0 bg-white/40 bg-gradient-to-l from-[#6d6027]/40 to-[#d3cbb8]/40 z-[100]"
   >
     <div class="flex justify-between items-center container mx-auto">
       <Logo />
@@ -19,7 +19,7 @@ const toggleMode = (mode) => {
       <section class="flex items-center">
         <div class="link">
           <router-link
-            class="pr-2.5 hover:text-primary dark:hover:text-font-light/60 align-middle"
+            class="pr-6 hover:text-primary dark:hover:text-font-light/60 align-middle"
             :to="menu.to"
             v-for="menu of MENUS"
             :key="menu.to"

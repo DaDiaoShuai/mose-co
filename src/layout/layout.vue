@@ -7,11 +7,15 @@ import BgHeader from "./Head&Footer/bg-header.vue";
 </script>
 <template>
   <BgHeader />
-  <NavBar></NavBar>
+  <NavBar class="fixed"></NavBar>
   <main
-    class="flex-1  container mx-auto pl-2 text-primary transition-all duration-1000"
+    class="flex-1 container mx-auto pl-2 text-primary transition-all duration-1000"
   >
-    <router-view></router-view>
+    <router-view v-slot="{ Component }">
+      <keep-alive>
+        <component :is="Component"></component>
+      </keep-alive>
+    </router-view>
   </main>
   <FootBar></FootBar>
 </template>

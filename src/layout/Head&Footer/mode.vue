@@ -18,7 +18,6 @@ const toggleMode = () => {
 
 <template>
   <div @click="toggleMode" class="cursor-pointer">
-    <!-- {{ darkMode ? "浅色" : "深色" }} -->
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="h-5 w-5"

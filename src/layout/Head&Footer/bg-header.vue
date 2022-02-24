@@ -11,7 +11,7 @@ import HBg2 from "@/assets/imgs/header-bg-duplicate.avif";
         <source :srcset="HBg" />
         <img
           :src="HBg"
-          alt="hbg"
+          alt=""
           class="w-[71.75rem] flex-none max-w-none dark:hidden"
         />
       </picture>
@@ -19,10 +19,16 @@ import HBg2 from "@/assets/imgs/header-bg-duplicate.avif";
         <source :srcset="HBg2" />
         <img
           :src="HBg2"
-          alt="hbg"
+          alt=""
           class="w-[90rem] flex-none max-w-none hidden dark:block"
         />
       </picture>
     </div>
   </div>
 </template>
+<style lang="stylus" scoped>
+img
+  border none
+  outline none
+  background-color none
+</style>

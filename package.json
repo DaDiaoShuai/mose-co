@@ -9,6 +9,7 @@
   "dependencies": {
     "@heroicons/vue": "^1.0.5",
     "keen-slider": "^6.6.3",
+    "lottie-web": "^5.8.1",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12"
   },
