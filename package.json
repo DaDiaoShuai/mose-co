@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "sh ./scripts/deploy.sh"
   },
   "dependencies": {
     "@heroicons/vue": "^1.0.5",
